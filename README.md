@@ -13,6 +13,9 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
   - [Graph of Thoughts](#graph-of-thoughts)
     - [Summary of the Paper](#summary-of-the-paper-1)
     - [Discussion Summary](#discussion-summary-1)
+  - [Buffer of Thoughts](#buffer-of-thoughts)
+    - [Summary of the Paper](#summary-of-the-paper-2)
+    - [Discussion Summary](#discussion-summary-2)
 
 ## Papers Discussed
 
@@ -20,6 +23,7 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
 |------------|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|---------------------|
 | 04-07-2024 | Tree of Thoughts                     | A novel framework enhancing LLMs' problem-solving abilities by using a tree-based reasoning structure.                          | [Github](https://github.com/princeton-nlp/tree-of-thought-llm)    | [arXiv](https://arxiv.org/abs/2305.10601) |
 | 15-08-2024 | Graph of Thoughts                    | Introduces a graph-based reasoning process for LLMs, allowing more complex problem-solving than tree or chain-based approaches. | [Github](https://github.com/spcl/graph-of-thoughts) | [arXiv](https://arxiv.org/abs/2308.09687) |
+| 12-09-2024 | Buffer of Thoughts                   | Introduces the BoT framework, enhancing LLM reasoning with high-level thought templates to improve accuracy, efficiency, and robustness. | [Github](https://github.com/YangLing0818/buffer-of-thought-llm) | [arXiv](https://arxiv.org/abs/2406.04271) |
 
 ## Detailed Summaries and Discussions
 
@@ -88,4 +92,38 @@ The discussion revolves around challenges and strategies related to improving al
 - **Skepticism and Realism:** Some skepticism was expressed about the actual novelty and utility of these methods, with concerns that existing solutions in traditional computer science might already address the problems being targeted.
 - **Future Directions:** Participants were curious about the potential of training models on multimodal data to simulate human-like thinking more effectively, and the possibility of LLMs combining information from different domains to produce new insights was discussed.
 
+### Buffer of Thoughts
+
+**Paper Title:** Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models
+
+**Discussion Date:** 12-09-2024
+
+#### Summary of the Paper
+
+The paper *Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models* by Yang et al. (2024) introduces the Buffer of Thoughts (BoT) framework. This framework enhances reasoning in large language models by utilizing a "meta-buffer" of high-level thought templates distilled from past tasks, allowing the model to adapt and generalize across new problems. The framework also includes a buffer-manager, which dynamically updates the meta-buffer as new tasks are solved. BoT shows significant improvements in reasoning accuracy and efficiency across various benchmarks, reducing computational costs and requiring fewer queries than traditional multi-query reasoning methods.
+
+
+#### Discussion Summary
+During this week’s LLM Reading Group, the discussion centered on the paper *Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models* by Yang et al. (2024)【5†source】. The paper introduces a novel framework, Buffer of Thoughts (BoT), designed to enhance the accuracy, efficiency, and robustness of reasoning in large language models (LLMs).
+
+The group engaged in a detailed analysis of the BoT framework, focusing on its core components: the meta-buffer and buffer-manager. The meta-buffer stores high-level thought templates distilled from previous tasks, while the buffer-manager dynamically updates these templates, allowing the model to generalize across different tasks. The discussion emphasized the framework's potential to outperform state-of-the-art methods in complex reasoning tasks while reducing computational overhead.
+
+Participants raised questions about the mechanics of the embedding vectors used for retrieving thought-templates. Specifically, there was some debate regarding the precise embedding methods and thresholds employed for retrieving relevant templates. Additionally, the group discussed the scalability of the BoT approach and its potential for broader application beyond the reasoning tasks presented in the paper, particularly in areas like reinforcement learning and optimization.
+
+The general sentiment was that, although the framework shows promise, its practical implementation may need refinement, particularly concerning the clarity of its explanation and the need to address several typographical errors in the draft. There was curiosity about whether the BoT approach would be published in its current form or if it would undergo further revisions. Participants also acknowledged that even if the ideas in the paper are not fully developed yet, they could inspire future improvements in reasoning techniques for LLMs.
+
+To conclude, the group discussed potential papers for the next meeting, with a focus on continuing the theme of optimization and heuristic search in LLM contexts.
+
 Overall, the discussion was a blend of technical exploration, skepticism, and curiosity about the future potential of LLMs in solving complex problems, balanced with practical considerations in research and collaboration.
+
+**Key Points:**
+
+1. **Embedding Vector Clarification**: Participants were curious about the specific mechanics of the embedding vectors used in BoT, including the threshold for retrieving thought-templates.
+   
+2. **Scalability and Applications**: The group discussed the scalability of the BoT approach and its potential to be applied in areas beyond the paper's scope, such as reinforcement learning and optimization.
+
+3. **Clarity and Typographical Issues**: Some members found the paper's explanations unclear, and there were concerns about the numerous typographical errors. These might need to be addressed before the work is published.
+
+4. **Future Impact**: Despite these issues, there was consensus that the BoT framework introduces promising ideas that could inspire further advancements in reasoning techniques for LLMs.
+
+
