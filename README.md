@@ -104,11 +104,11 @@ The paper *Buffer of Thoughts: Thought-Augmented Reasoning with Large Language M
 
 
 #### Discussion Summary
-During this week’s LLM Reading Group, the discussion centered on the paper *Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models* by Yang et al. (2024)【5†source】. The paper introduces a novel framework, Buffer of Thoughts (BoT), designed to enhance the accuracy, efficiency, and robustness of reasoning in large language models (LLMs).
+During this week’s LLM Reading Group, the discussion centered on the paper *Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models* by Yang et al. (2024)[arXiv](https://arxiv.org/abs/2406.04271). The paper introduces a novel framework, Buffer of Thoughts (BoT), designed to enhance the accuracy, efficiency, and robustness of reasoning in large language models (LLMs).
 
 The group engaged in a detailed analysis of the BoT framework, focusing on its core components: the meta-buffer and buffer-manager. The meta-buffer stores high-level thought templates distilled from previous tasks, while the buffer-manager dynamically updates these templates, allowing the model to generalize across different tasks. The discussion emphasized the framework's potential to outperform state-of-the-art methods in complex reasoning tasks while reducing computational overhead.
 
-Participants raised questions about the mechanics of the embedding vectors used for retrieving thought-templates. Specifically, there was some debate regarding the precise embedding methods and thresholds employed for retrieving relevant templates. Additionally, the group discussed the scalability of the BoT approach and its potential for broader application beyond the reasoning tasks presented in the paper, particularly in areas like reinforcement learning and optimization.
+Participants raised questions about the mechanics of the embedding vectors used for calculating simmilarity of stored thought-templates and updating the buffer. Specifically, there was some debate regarding the precise embedding methods and thresholds employed for retrieving relevant templates, as the threshold is not specified in the paper and embeddings from close-source models such as GPT-4 are generally unavailable. Additionally, the group discussed the scalability of the BoT approach and its potential for broader application beyond the reasoning tasks presented in the paper, particularly in areas like reinforcement learning and optimization.
 
 The general sentiment was that, although the framework shows promise, its practical implementation may need refinement, particularly concerning the clarity of its explanation and the need to address several typographical errors in the draft. There was curiosity about whether the BoT approach would be published in its current form or if it would undergo further revisions. Participants also acknowledged that even if the ideas in the paper are not fully developed yet, they could inspire future improvements in reasoning techniques for LLMs.
 
@@ -118,11 +118,11 @@ Overall, the discussion was a blend of technical exploration, skepticism, and cu
 
 **Key Points:**
 
-1. **Embedding Vector Clarification**: Participants were curious about the specific mechanics of the embedding vectors used in BoT, including the threshold for retrieving thought-templates.
+1. **Embedding Vector Clarification**: Participants were curious about the specific mechanics of the embedding vectors used in BoT, including the threshold for updateing thought-templates.
    
 2. **Scalability and Applications**: The group discussed the scalability of the BoT approach and its potential to be applied in areas beyond the paper's scope, such as reinforcement learning and optimization.
 
-3. **Clarity and Typographical Issues**: Some members found the paper's explanations unclear, and there were concerns about the numerous typographical errors. These might need to be addressed before the work is published.
+3. **Clarity and Typographical Issues**: Most members found the paper's explanations unclear, and there were concerns about the numerous typographical errors. These should be addressed before the work is published.
 
 4. **Future Impact**: Despite these issues, there was consensus that the BoT framework introduces promising ideas that could inspire further advancements in reasoning techniques for LLMs.
 
