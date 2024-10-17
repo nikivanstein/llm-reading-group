@@ -28,6 +28,8 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
 | 15-08-2024 | Graph of Thoughts                    | Introduces a graph-based reasoning process for LLMs, allowing more complex problem-solving than tree or chain-based approaches. | [Github](https://github.com/spcl/graph-of-thoughts) | [arXiv](https://arxiv.org/abs/2308.09687) |
 | 12-09-2024 | Buffer of Thoughts                   | Introduces the BoT framework, enhancing LLM reasoning with high-level thought templates to improve accuracy, efficiency, and robustness. | [Github](https://github.com/YangLing0818/buffer-of-thought-llm) | [arXiv](https://arxiv.org/abs/2406.04271) |
 | 26-09-2024 | [Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models](https://arxiv.org/abs/2407.10873v1) | Explores the integration of LLMs with EPS for AHD, highlighting the importance of evolutionary search. | x | [arXiv](https://arxiv.org/pdf/2407.10873) |
+| 2024-10-XX | [Intelligence at the Edge of Chaos](https://arxiv.org/abs/2410.02536v2)         | Investigates the relationship between system complexity and emergent intelligence in LLMs. | x | [arXiv](https://arxiv.org/abs/2410.02536v2) |
+
 
 
 ## Detailed Summaries and Discussions
@@ -153,11 +155,10 @@ This paper investigates the role of evolutionary search in LLM-based Automated H
 </details>
 
 #### Discussion Summary
-
-### Discussion Summary:
 In our discussion on **"Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models"**, we focused on the interplay between LLMs and evolutionary search in automated algorithm design. The conversation brought out several insights regarding the strengths and limitations of different models and the overall experimental design of the paper. There was also discussion around the role of LLMs in programming, their performance issues, and ways to optimize their utility.
 
-#### Key Points Discussed:
+**Key Points:**
+
 1. **LLMs as a Functional Programming Tool**:  
    - It was noted that LLMs could be seen as Turing machines, with prompts acting as function calls in a stateless, functional programming style. This structure leads to the need for chaining prompts to maintain state throughout the evolutionary process.
 
@@ -180,5 +181,35 @@ In our discussion on **"Understanding the Importance of Evolutionary Search in A
    - The team touched on how LLM performance might vary depending on the programming language generated (e.g., Python vs. Rust), hinting at future directions for testing across multiple coding languages.
 
 
+### Intelligence at the Edge of Chaos
 
+**Authors**: Shiyang Zhang, Aakash Patel, Syed A Rizvi, Nianchen Liu, Sizhuang He, Amin Karbasi, Emanuele Zappala, David van Dijk  
+**Link**: [arXiv](https://arxiv.org/abs/2410.02536v2)  
+**Discussion Date:** 10-10-2024  
 
+#### Summary of the Paper
+
+This paper explores the emergence of intelligence in large language models (LLMs) by training them on elementary cellular automata (ECA) data. It demonstrates that models trained on systems with intermediate complexity ("edge of chaos") perform best in reasoning and prediction tasks, highlighting the importance of system complexity in fostering intelligence.
+
+<details>
+<summary> Main Contributions </summary>  
+  
+  1. Establishes a correlation between ECA complexity and LLM intelligence.
+  2. Identifies a range of complexity levels for emergent intelligence.
+  3. Shows better downstream performance for models trained on complex but not chaotic rules.
+  4. Provides insights into attention mechanisms and non-trivial solutions learned by the models.
+
+</details>
+
+#### Discussion Summary
+
+In this session, the group discussed the paper "Intelligence at the Edge of Chaos" and critically reflected on the experimental design and conclusions drawn by the authors. While the group found the core idea of emergent intelligence intriguing, they expressed concerns about the boldness of the claims and the lack of clear correlation between the complexity of the system and the performance improvements in downstream tasks. The group also debated the computational complexity required for the experiments and suggested exploring how simpler, dense neural networks would behave when trained on cellular automata (CAs).
+
+**Key Points**:  
+
+  1. The paper discusses how intelligence emerges in LLMs trained on systems at the "edge of chaos," but the group criticized the bold conclusions, which were not clearly backed by the data.
+  2. There was a lack of a proper baseline in the experiments, making it difficult to evaluate the claimed benefits.
+  3. The correlations between complexity and downstream task performance were unclear and not well-demonstrated in the results.
+  4. The group suggested exploring how smaller, dense neural networks would behave when trained on CAs and how the weights would look after training.
+  5. One member proposed that the CA training may have influenced the initial diversity in the weight space, leading to different performance outcomes on downstream tasks.
+  6. The Eureka paper by NVIDIA, focused on reward design for robotics using LLMs, was discussed as a similar work.
