@@ -19,6 +19,9 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
   - [Evolutionary Search with LLMs](#evolutionary-search-with-llms)
     - [Summary of the Paper](#summary-of-the-paper-3)
     - [Discussion Summary](#discussion-summary-3)
+  - [Intelligence at the Edge of Chaos](#intelligence-at-the-edge-of-chaos)
+    - [Summary of the Paper](#summary-of-the-paper-4)
+    - [Discussion Summary](#discussion-summary-4)
 
 ## Papers Discussed
 
