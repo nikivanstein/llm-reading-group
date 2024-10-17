@@ -1,7 +1,11 @@
 # LLM Reading Group Discussions
 
 This repository contains summaries and discussions of papers reviewed by our reading group at [LIACS](https://liacs.leidenuniv.nl/). Below is a table with brief information about the papers discussed, followed by more detailed summaries of the papers and discussions.
-The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
+The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl).
+
+> [!IMPORTANT]  
+> Our discussions aim to foster a deeper understanding of state-of-the-art research in large language models (LLMs). We focus on bridging the gap between theory and practical applications, offering an open space for critique and exploration.
+
 
 ## Table of Contents
 
@@ -33,6 +37,8 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
 | 26-09-2024 | [Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models](https://arxiv.org/abs/2407.10873v1) | Explores the integration of LLMs with EPS for AHD, highlighting the importance of evolutionary search. | x | [arXiv](https://arxiv.org/pdf/2407.10873) |
 | 2024-10-XX | [Intelligence at the Edge of Chaos](https://arxiv.org/abs/2410.02536v2)         | Investigates the relationship between system complexity and emergent intelligence in LLMs. | x | [arXiv](https://arxiv.org/abs/2410.02536v2) |
 
+> [!NOTE]  
+> Each paper is carefully selected to showcase a wide range of challenges and innovations in the domain of LLMs. From reasoning strategies to optimization methods working in tendem with LLMs, our discussions offer unique insights into each approach.
 
 
 ## Detailed Summaries and Discussions
@@ -184,6 +190,7 @@ In our discussion on **"Understanding the Importance of Evolutionary Search in A
    - The team touched on how LLM performance might vary depending on the programming language generated (e.g., Python vs. Rust), hinting at future directions for testing across multiple coding languages.
 
 
+
 ### Intelligence at the Edge of Chaos
 
 **Authors**: Shiyang Zhang, Aakash Patel, Syed A Rizvi, Nianchen Liu, Sizhuang He, Amin Karbasi, Emanuele Zappala, David van Dijk  
@@ -216,3 +223,7 @@ In this session, the group discussed the paper "Intelligence at the Edge of Chao
   4. The group suggested exploring how smaller, dense neural networks would behave when trained on CAs and how the weights would look after training.
   5. One member proposed that the CA training may have influenced the initial diversity in the weight space, leading to different performance outcomes on downstream tasks.
   6. The Eureka paper by NVIDIA, focused on reward design for robotics using LLMs, was discussed as a similar work.
+
+> [!WARNING]  
+> Though the "Edge of Chaos" concept is intriguing, it's important to note that the group had concerns about the bold conclusions drawn from the data. Future work should include a more solid baseline to strengthen the claims.
+
