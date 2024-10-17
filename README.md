@@ -16,6 +16,9 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
   - [Buffer of Thoughts](#buffer-of-thoughts)
     - [Summary of the Paper](#summary-of-the-paper-2)
     - [Discussion Summary](#discussion-summary-2)
+  - [Evolutionary Search with LLMs](#evolutionary-search-with-llms)
+    - [Summary of the Paper](#summary-of-the-paper-3)
+    - [Discussion Summary](#discussion-summary-3)
 
 ## Papers Discussed
 
@@ -24,6 +27,8 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl)
 | 04-07-2024 | Tree of Thoughts                     | A novel framework enhancing LLMs' problem-solving abilities by using a tree-based reasoning structure.                          | [Github](https://github.com/princeton-nlp/tree-of-thought-llm)    | [arXiv](https://arxiv.org/abs/2305.10601) |
 | 15-08-2024 | Graph of Thoughts                    | Introduces a graph-based reasoning process for LLMs, allowing more complex problem-solving than tree or chain-based approaches. | [Github](https://github.com/spcl/graph-of-thoughts) | [arXiv](https://arxiv.org/abs/2308.09687) |
 | 12-09-2024 | Buffer of Thoughts                   | Introduces the BoT framework, enhancing LLM reasoning with high-level thought templates to improve accuracy, efficiency, and robustness. | [Github](https://github.com/YangLing0818/buffer-of-thought-llm) | [arXiv](https://arxiv.org/abs/2406.04271) |
+| 26-09-2024 | [Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models](https://arxiv.org/abs/2407.10873v1) | Explores the integration of LLMs with EPS for AHD, highlighting the importance of evolutionary search. | x | [arXiv](https://arxiv.org/pdf/2407.10873) |
+
 
 ## Detailed Summaries and Discussions
 
@@ -125,5 +130,55 @@ Overall, the discussion was a blend of technical exploration, skepticism, and cu
 3. **Clarity and Typographical Issues**: Most members found the paper's explanations unclear, and there were concerns about the numerous typographical errors. These should be addressed before the work is published.
 
 4. **Future Impact**: Despite these issues, there was consensus that the BoT framework introduces promising ideas that could inspire further advancements in reasoning techniques for LLMs.
+
+### Evolutionary Search with LLMs
+
+**Paper Title:** Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models  
+**Authors**: Rui Zhang, Fei Liu, Xi Lin, Zhenkun Wang, Zhichao Lu, Qingfu Zhang  
+**Link**: [arXiv](https://arxiv.org/abs/2407.10873v1)  
+**Discussion Date:** 12-09-2024  
+
+#### Summary of the Paper
+
+This paper investigates the role of evolutionary search in LLM-based Automated Heuristic Design (AHD), demonstrating that LLMs alone are not sufficient to optimize heuristics. The authors benchmark multiple methods across nine LLMs, providing empirical evidence that the integration of LLMs and EPS outperforms standalone LLMs.
+
+<details>
+<summary> Main Contributions </summary>  
+  
+  1. Large-scale benchmark for LLM-based EPS methods.
+  2. Proposal of a new (1+1)-EPS baseline.
+  3. Empirical demonstration of the necessity of evolutionary search in LLM-based AHD.
+  4. Open-sourcing of all methods and results for reproducibility.
+
+</details>
+
+#### Discussion Summary
+
+### Discussion Summary:
+In our discussion on **"Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models"**, we focused on the interplay between LLMs and evolutionary search in automated algorithm design. The conversation brought out several insights regarding the strengths and limitations of different models and the overall experimental design of the paper. There was also discussion around the role of LLMs in programming, their performance issues, and ways to optimize their utility.
+
+#### Key Points Discussed:
+1. **LLMs as a Functional Programming Tool**:  
+   - It was noted that LLMs could be seen as Turing machines, with prompts acting as function calls in a stateless, functional programming style. This structure leads to the need for chaining prompts to maintain state throughout the evolutionary process.
+
+2. **Discussion on Results Visualization**:  
+   - Some members raised concerns about Figure 5 in the paper, noting that the visualization (particularly the size of circles representing performance) was unconventional, which could lead to misinterpretation.
+
+3. **Performance of Models**:  
+   - The group discussed the performance of different methods, specifically noting that GPT-3.5 underperformed, while the (1+1)-EPS method showed inconsistent results, possibly due to a limited number of runs. The group suggested that more runs might have yielded better insights.
+
+4. **Challenges with LLM-Generated Code**:  
+   - A significant portion of the discussion revolved around the fact that LLMs, particularly GPT-4 and GPT-3.5, often generate code that is not runnable. Approximately 18% of the code from GPT-3.5 was reported as non-runnable, compared to about 10% for GPT-4, highlighting a notable issue with LLM reliability in generating executable code.
+
+5. **Insert Domain Knowledge**:  
+   - One promising aspect discussed was the ease of injecting domain knowledge into LLMs, which can potentially lead to improvements in state-of-the-art solutions for certain tasks.
+
+6. **Importance of Larger Benchmarking**:  
+   - The limited number of runs in the paper’s experiments was seen as a drawback. The group emphasized the importance of performing additional runs, despite the high computational cost, to avoid the variability seen in some of the results.
+
+7. **Coding Language and LLMs**:  
+   - The team touched on how LLM performance might vary depending on the programming language generated (e.g., Python vs. Rust), hinting at future directions for testing across multiple coding languages.
+
+
 
 
