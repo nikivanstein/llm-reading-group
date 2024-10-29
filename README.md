@@ -26,6 +26,9 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl).
   - [Intelligence at the Edge of Chaos](#intelligence-at-the-edge-of-chaos)
     - [Summary of the Paper](#summary-of-the-paper-4)
     - [Discussion Summary](#discussion-summary-4)
+  - [Eureka](#eureka-human-level-reward-design-via-coding-large-language-models)
+    - [Summary of the Paper](#summary-of-the-paper-5)
+    - [Discussion Summary](#discussion-summary-5)
 
 ## Papers Discussed
 
@@ -35,13 +38,17 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl).
 | 15-08-2024 | Graph of Thoughts                    | Introduces a graph-based reasoning process for LLMs, allowing more complex problem-solving than tree or chain-based approaches. | [Github](https://github.com/spcl/graph-of-thoughts) | [arXiv](https://arxiv.org/abs/2308.09687) |
 | 12-09-2024 | Buffer of Thoughts                   | Introduces the BoT framework, enhancing LLM reasoning with high-level thought templates to improve accuracy, efficiency, and robustness. | [Github](https://github.com/YangLing0818/buffer-of-thought-llm) | [arXiv](https://arxiv.org/abs/2406.04271) |
 | 26-09-2024 | [Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models](https://arxiv.org/abs/2407.10873v1) | Explores the integration of LLMs with EPS for AHD, highlighting the importance of evolutionary search. | x | [arXiv](https://arxiv.org/pdf/2407.10873) |
-| 2024-10-XX | [Intelligence at the Edge of Chaos](https://arxiv.org/abs/2410.02536v2)         | Investigates the relationship between system complexity and emergent intelligence in LLMs. | x | [arXiv](https://arxiv.org/abs/2410.02536v2) |
+| 2024-10-10 | [Intelligence at the Edge of Chaos](https://arxiv.org/abs/2410.02536v2)         | Investigates the relationship between system complexity and emergent intelligence in LLMs. | x | [arXiv](https://arxiv.org/abs/2410.02536v2) |
+| 2024-10-24 | EUREKA: Human-Level Reward Design via Coding Large Language Models | EUREKA leverages LLMs to autonomously design and optimize reward functions in RL, achieving human-level performance across robotic tasks. | [Code](https://eureka-research.github.io) | [Paper](https://eureka-research.github.io/assets/eureka_paper.pdf) |
+
 
 > [!NOTE]  
 > Each paper is carefully selected to showcase a wide range of challenges and innovations in the domain of LLMs. From reasoning strategies to optimization methods working in tendem with LLMs, our discussions offer unique insights into each approach.
 
 
 ## Detailed Summaries and Discussions
+
+---
 
 ### Tree of Thoughts
 
@@ -78,6 +85,8 @@ In the meeting, the group discussed their general impressions of the "Tree of Th
 
 Overall, the paper was positively received, but the group highlighted the need for further exploration into its generalizability and the true nature of its reasoning capabilities.
 
+---
+
 ### Graph of Thoughts
 
 **Paper Title:** Graph of Thoughts: Solving Elaborate Problems with Large Language Models
@@ -107,6 +116,8 @@ The discussion revolves around challenges and strategies related to improving al
 - **Application Areas:** Considerations were made about which domains or tasks these advanced methods might be more applicable to, especially tasks that are not well-defined mathematically but require nuanced understanding.
 - **Skepticism and Realism:** Some skepticism was expressed about the actual novelty and utility of these methods, with concerns that existing solutions in traditional computer science might already address the problems being targeted.
 - **Future Directions:** Participants were curious about the potential of training models on multimodal data to simulate human-like thinking more effectively, and the possibility of LLMs combining information from different domains to produce new insights was discussed.
+
+---
 
 ### Buffer of Thoughts
 
@@ -141,6 +152,8 @@ Overall, the discussion was a blend of technical exploration, skepticism, and cu
 3. **Clarity and Typographical Issues**: Most members found the paper's explanations unclear, and there were concerns about the numerous typographical errors. These should be addressed before the work is published.
 
 4. **Future Impact**: Despite these issues, there was consensus that the BoT framework introduces promising ideas that could inspire further advancements in reasoning techniques for LLMs.
+
+---
 
 ### Evolutionary Search with LLMs
 
@@ -189,7 +202,7 @@ In our discussion on **"Understanding the Importance of Evolutionary Search in A
 7. **Coding Language and LLMs**:  
    - The team touched on how LLM performance might vary depending on the programming language generated (e.g., Python vs. Rust), hinting at future directions for testing across multiple coding languages.
 
-
+---
 
 ### Intelligence at the Edge of Chaos
 
@@ -226,4 +239,45 @@ In this session, the group discussed the paper "Intelligence at the Edge of Chao
 
 > [!WARNING]  
 > Though the "Edge of Chaos" concept is intriguing, it's important to note that the group had concerns about the bold conclusions drawn from the data. Future work should include a more solid baseline to strengthen the claims.
+
+---
+
+### EUREKA: Human-Level Reward Design via Coding Large Language Models
+
+**Authors**: Yecheng Jason Ma, William Liang, Guanzhi Wang, De-An Huang, Osbert Bastani, Dinesh Jayaraman, Yuke Zhu, Linxi "Jim" Fan, Anima Anandkumar  
+**Link**: [EUREKA GitHub Repository](https://eureka-research.github.io)  
+**Discussion Date:** 24-10-2024  
+
+
+#### Summary of the Paper
+
+The paper introduces EUREKA, an approach to design reward functions using Large Language Models (LLMs) such as GPT-4 to generate code-based rewards for reinforcement learning tasks. EUREKA combines zero-shot reward function generation and iterative evolutionary improvement, enabling LLMs to design effective reward systems autonomously across diverse robotic tasks without task-specific engineering. Notably, EUREKA was able to surpass human-designed rewards on 83% of tasks within 29 open-source reinforcement learning (RL) environments, marking a significant step towards universal reward programming.
+
+The methodology leverages three core elements: 1) using environment code as context for reward generation, 2) employing an evolutionary search where reward candidates are iteratively refined, and 3) incorporating "reward reflection," where feedback from training informs further optimization. EUREKA’s performance was particularly highlighted in dexterous manipulation tasks, achieving first-time successes in simulating complex actions like rapid pen spinning. Additionally, it demonstrated a unique capability in human feedback alignment through RL from human feedback (RLHF), adapting rewards to reflect human preferences in agent behavior.
+
+<details>
+<summary> Main Contributions </summary>  
+
+1. **Generalizable Reward Generation**: EUREKA automates reward creation without requiring task-specific prompts, achieving better-than-human performance on complex tasks in robotic RL.
+2. **Dexterous Skill Acquisition**: Using curriculum learning, EUREKA enables agents to solve intricate tasks (e.g., pen spinning) which were previously unattainable via manual reward engineering.
+3. **Human-Aligned Reinforcement Learning**: EUREKA integrates human feedback to refine rewards, aligning agent behavior with nuanced human preferences.
+4. **Evolutionary Optimization in Reward Design**: The evolutionary approach allows EUREKA to iteratively enhance rewards, outperforming other LLM-aided reward design methods like L2R.
+
+</details>
+
+#### Discussion Summary
+
+The discussion centered on the innovative aspects of EUREKA and potential future applications. 
+
+**Key Points**:  
+
+1. **General Applicability and RL Innovation**: Participants appreciated EUREKA’s potential beyond robotic tasks, suggesting applications in diverse domains needing reward optimization. The methodology aligns with reinforcement learning needs by avoiding complex prompt engineering, yet evolving rewards for task-specific improvements.
+2. **Evolutionary Search vs. RL Integration**: The group debated EUREKA's choice of evolutionary optimization over reinforcement learning with tree-based methods. Some felt that incorporating reinforcement learning to further refine responses could potentially enhance efficiency by mapping optimal paths, whereas EUREKA’s design opts for a simplified feedback-driven evolution.
+3. **Human Feedback and Agent Alignment**: The group recognized the promising results of RLHF integration, where EUREKA adapts rewards based on human-provided feedback. This approach seemed promising for tasks requiring alignment with subjective human preferences, especially in scenarios lacking clear metrics.
+4. **Limitations and Scope**: While EUREKA shows notable strengths, some felt its focus on robotic and dexterous tasks might limit the perceived impact. Extending this approach to other domains, such as physics or complex problem-solving, could broaden its applicability. Concerns about scalability and deprecation of NVIDIA's Isaac Gym platform were also raised.
+5. **Future Directions**: Discussion included possible extensions of EUREKA’s framework, such as experimenting with less conventional environments or more structurally complex reward generation tasks, to further test its robustness and universality.
+
+---
+
+
 
