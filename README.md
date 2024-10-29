@@ -277,6 +277,25 @@ The discussion centered on the innovative aspects of EUREKA and potential future
 4. **Limitations and Scope**: While EUREKA shows notable strengths, some felt its focus on robotic and dexterous tasks might limit the perceived impact. Extending this approach to other domains, such as physics or complex problem-solving, could broaden its applicability. Concerns about scalability and deprecation of NVIDIA's Isaac Gym platform were also raised.
 5. **Future Directions**: Discussion included possible extensions of EUREKA’s framework, such as experimenting with less conventional environments or more structurally complex reward generation tasks, to further test its robustness and universality.
 
+> [!NOTE]  
+> Now you can also listen to our NotebookLM generated podcast. This podcast is based on the paper and our discussion transcript.
+
+
+Part 1:
+
+https://github.com/user-attachments/assets/76cdbcfe-d7fd-44cc-bd11-0f0bae9cc3f2
+
+
+Part 2:
+
+https://github.com/user-attachments/assets/69565193-c187-486f-8d5f-811b9619951c
+
+
+Part 3:
+
+https://github.com/user-attachments/assets/9c8f93b1-fdbe-4b38-bafa-d22e5f370b43
+
+
 ---
 
 
