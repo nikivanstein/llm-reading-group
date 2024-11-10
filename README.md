@@ -29,6 +29,9 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl).
   - [Eureka](#eureka-human-level-reward-design-via-coding-large-language-models)
     - [Summary of the Paper](#summary-of-the-paper-5)
     - [Discussion Summary](#discussion-summary-5)
+  - [The AI Scientist](#the-ai-scientist)
+    - [Summary of the Paper](#summary-of-the-paper-6)
+    - [Discussion Summary](#discussion-summary-6)
 
 ## Papers Discussed
 
@@ -40,6 +43,7 @@ The meetings are chaired by [dr. Niki van Stein](https://nikivanstein.nl).
 | 26-09-2024 | [Understanding the Importance of Evolutionary Search in Automated Heuristic Design with Large Language Models](https://arxiv.org/abs/2407.10873v1) | Explores the integration of LLMs with EPS for AHD, highlighting the importance of evolutionary search. | x | [arXiv](https://arxiv.org/pdf/2407.10873) |
 | 2024-10-10 | [Intelligence at the Edge of Chaos](https://arxiv.org/abs/2410.02536v2)         | Investigates the relationship between system complexity and emergent intelligence in LLMs. | x | [arXiv](https://arxiv.org/abs/2410.02536v2) |
 | 2024-10-24 | EUREKA: Human-Level Reward Design via Coding Large Language Models | EUREKA leverages LLMs to autonomously design and optimize reward functions in RL, achieving human-level performance across robotic tasks. | [Code](https://eureka-research.github.io) | [Paper](https://eureka-research.github.io/assets/eureka_paper.pdf) |
+| 07-11-2024 | The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery | First fully autonomous research framework for ideation, experimentation, and writing, with cost-efficient paper generation | [GitHub](https://github.com/SakanaAI/AI-Scientist) | [arXiv](https://arxiv.org/abs/2408.06292) |
 
 
 > [!NOTE]  
@@ -294,6 +298,35 @@ https://github.com/user-attachments/assets/69565193-c187-486f-8d5f-811b9619951c
 Part 3:
 
 https://github.com/user-attachments/assets/9c8f93b1-fdbe-4b38-bafa-d22e5f370b43
+
+
+---
+
+### The AI Scientist
+
+**Paper Title:** The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery
+
+**Authors:** Chris Lu, Cong Lu, Robert Tjarko Lange, Jakob Foerster, Jeff Clune, David Ha  
+**Link:** [arXiv](https://arxiv.org/abs/2408.06292)  
+**Discussion Date:** 07-11-2024  
+
+#### Summary of the Paper
+This paper introduces **The AI Scientist**, a pioneering framework that leverages large language models (LLMs) to autonomously conduct scientific research. Moving beyond AI-aided research, this framework enables LLMs to generate novel research ideas, execute experiments, analyze results, and write scientific papers with minimal human intervention. In a significant step toward fully automated scientific discovery, The AI Scientist combines ideation, experimentation, manuscript writing, and review assessment in a repeatable, scalable process. Applied across three subfields in machine learning—diffusion modeling, language modeling, and learning dynamics—the framework demonstrates versatility and cost efficiency, producing complete research papers for as little as $15 each.
+
+<details>
+<summary> Main Contributions </summary>  
+
+1. **End-to-End Research Automation:** The AI Scientist executes the entire research process independently, including ideation, experiment design, code generation, and manuscript writing.
+  
+2. **Automated Review Process:** The framework includes a foundation model-based review agent that performs near-human-level reviews to evaluate generated research papers, enabling iterative refinement.
+
+3. **Low-Cost Research Generation:** Capable of producing hundreds of research papers at a low cost, The AI Scientist makes significant strides toward democratizing scientific research.
+
+4. **Versatile Applications:** Demonstrated efficacy across diffusion modeling, language modeling, and learning dynamics, with the potential to generalize to other fields.
+
+</details>
+
+#### Discussion Summary
 
 
 ---
